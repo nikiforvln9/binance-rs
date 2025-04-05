@@ -100,6 +100,9 @@ pub enum Filters {
     #[serde(rename = "MAX_NUM_ORDERS")]
     #[serde(rename_all = "camelCase")]
     MaxNumOrders { max_num_orders: Option<u16> },
+    #[serde(rename = "POSITION_RISK_CONTROL")]
+    #[serde(rename_all = "camelCase")]
+    PositionRiskControl { position_control_side: String },
     #[serde(rename = "MAX_NUM_ALGO_ORDERS")]
     #[serde(rename_all = "camelCase")]
     MaxNumAlgoOrders { max_num_algo_orders: Option<u16> },
